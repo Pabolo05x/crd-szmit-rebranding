@@ -36,6 +36,8 @@ Strona została zaprojektowana z priorytetem szybkości ładowania, co jest kluc
 * **Głośne biblioteki vs Wydajność:** Wybór GLightbox ze względu na jego lekkość i brak zależności od ciężkich frameworków.
 * **Code Splitting:** Wykorzystanie klas narzędziowych Tailwind CSS ograniczyło wielkość wynikowego pliku stylów do absolutnego minimum.
 
+![PageSpeed CRD](crd-speed.jpg)
+
 ### 📸 Interaktywna Galeria
 Zintegrowałem bibliotekę **GLightbox**, która zapewnia płynne i nowoczesne przeglądanie zasobów wizualnych na urządzeniach stacjonarnych i mobilnych (obsługa gestów).
 
@@ -48,7 +50,5 @@ Serwis jest w pełni responsywny, z dedykowanym, inteligentnym systemem przewija
 * `cennik.html` - Przejrzyste pakiety cenowe z wyróżnieniem korzyści.
 * `style.css` - Autorskie animacje i logika transformacji skośnych elementów.
   
-![PageSpeed CRD](crd-speed.jpg)
-
 ---
 *Developed by Paweł Sosiński - SosinskiWeb*
