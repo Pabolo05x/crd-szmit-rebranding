@@ -21,11 +21,20 @@ Zaprojektowałem unikalny styl wizualny oparty na **Dark Mode** z intensywnymi c
 * Implementacja autorskich, "ściętych" przycisków (**skewed buttons**) nawiązujących do estetyki motoryzacyjnej.
 * Zaawansowana typografia z efektem obrysu (*text-stroke*).
 
-### ⚡ Optymalizacja Wydajności (Performance)
-Mimo bogatej oprawy graficznej, strona osiąga wynik **95/100** w Google PageSpeed Insights dzięki:
-* Minimalizacji krytycznego kodu CSS.
-* Optymalizacji grafik pod kątem czasu ładowania (LCP).
-* Wykorzystaniu asynchronicznego ładowania zewnętrznych bibliotek.
+## ⚡ Optymalizacja i Wyniki PageSpeed
+Strona została zaprojektowana z priorytetem szybkości ładowania, co jest kluczowe w branży usługowej. Mimo zaawansowanych efektów wizualnych (Dark Mode, Carbon textures), serwis osiąga doskonałe wyniki w audytach Google:
+
+| Kategoria | Wynik | Status |
+| :--- | :--- | :--- |
+| **Wydajność (Performance)** | **95/100** | 🟢 |
+| **Ułatwienia dostępu (Accessibility)** | **94/100** | 🟢 |
+| **Sprawdzone metody (Best Practices)** | **100/100** | 🟢 |
+| **SEO** | **100/100** | 🟢 |
+
+### Kluczowe zabiegi optymalizacyjne:
+* **LCP (Largest Contentful Paint) Optimization:** Optymalizacja głównego banera (hero image) i asynchroniczne ładowanie czcionek Inter.
+* **Głośne biblioteki vs Wydajność:** Wybór GLightbox ze względu na jego lekkość i brak zależności od ciężkich frameworków.
+* **Code Splitting:** Wykorzystanie klas narzędziowych Tailwind CSS ograniczyło wielkość wynikowego pliku stylów do absolutnego minimum.
 
 ### 📸 Interaktywna Galeria
 Zintegrowałem bibliotekę **GLightbox**, która zapewnia płynne i nowoczesne przeglądanie zasobów wizualnych na urządzeniach stacjonarnych i mobilnych (obsługa gestów).
@@ -38,6 +47,8 @@ Serwis jest w pełni responsywny, z dedykowanym, inteligentnym systemem przewija
 * `galeria.php` - Dynamiczny moduł galerii zintegrowany z GLightbox.
 * `cennik.html` - Przejrzyste pakiety cenowe z wyróżnieniem korzyści.
 * `style.css` - Autorskie animacje i logika transformacji skośnych elementów.
+  
+![PageSpeed CRD](crd-speed.jpg)
 
 ---
 *Developed by Paweł Sosiński - SosinskiWeb*
