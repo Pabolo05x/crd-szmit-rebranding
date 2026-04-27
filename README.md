@@ -2,7 +2,7 @@
 
 Projekt rebrandingu i wdrożenia nowoczesnego serwisu internetowego dla Centrum Ruchu Drogowego. Strona charakteryzuje się drapieżnym, "wyścigowym" designem oraz bezkompromisową wydajnością.
 
-![Podgląd projektu CRD](crd.jpg)
+![Podgląd projektu CRD](CRD.jpg)
 
 ## 🚀 Demo
 [https://sosinskiweb.pl/crd/](https://sosinskiweb.pl/crd/)
