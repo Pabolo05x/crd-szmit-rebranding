@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum Ruchu Drogowego - Tomasz Szmit | Legnica</title>
+    <meta name="description" content="CRD Tomasz Szmit & OSKameleon. Profesjonalna szkoła jazdy. Konsorcjum szkoleniowe Szmit & Szmit. Kategorie B, A, A1, A2, AM, B1.">
+    
+    <link rel="icon" href="crd.jpg" type="image/png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Margines, żeby nawigacja nie zasłaniała nagłówka formularza */
+        #formularz-kontaktowy {
+            scroll-margin-top: 110px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-inter flex flex-col min-h-screen">
+
+    <nav class="bg-white/95 border-b border-red-600 fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="text-3xl font-black italic tracking-tighter text-black hover:opacity-80 transition-opacity">
+                        CRD <span class="text-red-600">SZMIT</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#konsorcjum" class="text-gray-800 hover:text-red-600 font-bold uppercase text-sm tracking-wide transition">O nas</a>
+                    <a href="oferta.html" class="text-gray-800 hover:text-red-600 font-bold uppercase text-sm tracking-wide transition">Oferta</a>
+                    <a href="cennik.html" class="text-gray-800 hover:text-red-600 font-bold uppercase text-sm tracking-wide transition">Cennik</a>
+                    <a href="galeria.php" class="text-gray-800 hover:text-red-600 font-bold uppercase text-sm tracking-wide transition">Galeria</a>
+                    <a href="blog.html" class="text-gray-800 hover:text-red-600 font-bold uppercase text-sm tracking-wide transition">Blog</a>
+                    <a href="#opinie" class="text-gray-800 hover:text-red-600 font-bold uppercase text-sm tracking-wide transition">Opinie</a>
+                    
+                    <a href="#formularz-kontaktowy" class="bg-red-600 text-white px-6 py-2 font-bold uppercase text-sm skew-button hover:bg-black transition-all shadow-lg ml-2">
+                        <span class="skew-fix">Zapisz się</span>
+                    </a>
+                </div>
+                
+                <div class="md:hidden flex items-center"><button id="mobile-menu-btn" class="text-black hover:text-red-600 focus:outline-none"><i class="fas fa-bars text-2xl"></i></button></div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 absolute w-full shadow-xl">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="#konsorcjum" class="block py-2 text-lg font-bold text-gray-800 border-l-4 border-transparent hover:border-red-600 hover:pl-2 transition-all">O nas</a>
+                <a href="oferta.html" class="block py-2 text-lg font-bold text-gray-800 border-l-4 border-transparent hover:border-red-600 hover:pl-2 transition-all">Oferta</a>
+                <a href="cennik.html" class="block py-2 text-lg font-bold text-gray-800 border-l-4 border-transparent hover:border-red-600 hover:pl-2 transition-all">Cennik</a>
+                <a href="galeria.php" class="block py-2 text-lg font-bold text-gray-800 border-l-4 border-transparent hover:border-red-600 hover:pl-2 transition-all">Galeria</a>
+                <a href="blog.html" class="block py-2 text-lg font-bold text-gray-800 border-l-4 border-transparent hover:border-red-600 hover:pl-2 transition-all">Blog</a>
+                <a href="#opinie" class="block py-2 text-lg font-bold text-gray-800 border-l-4 border-transparent hover:border-red-600 hover:pl-2 transition-all">Opinie</a>
+                <a href="#formularz-kontaktowy" class="block mt-4 text-center bg-red-600 text-white py-3 font-bold uppercase">Zapisz się</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gray-900">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Droga" class="w-full h-full object-cover opacity-20 grayscale">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black/80"></div>
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-30"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="md:w-2/3">
+                <div class="inline-flex items-center gap-2 text-red-500 font-bold tracking-widest uppercase mb-4 animate-fade-in-up">
+                    <i class="fas fa-heartbeat"></i> Centrum Ruchu Drogowego
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black text-white italic tracking-tighter mb-6 leading-none animate-fade-in-up animation-delay-100">
+                    SZMIT <span class="text-red-600">&</span> SZMIT <br>
+                    <span class="text-stroke-white text-transparent">DRIVING TEAM</span>
+                </h1>
+                <p class="mt-4 text-xl text-gray-300 max-w-xl mb-10 border-l-4 border-red-600 pl-6 animate-fade-in-up animation-delay-200">
+                    Szkolimy na nowoczesnej flocie pojazdów. Profesjonalizm, technika, bezpieczeństwo.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-300">
+                    <a href="oferta.html" class="bg-red-600 text-white px-10 py-4 font-bold uppercase text-lg skew-button hover:bg-white hover:text-red-600 transition-all shadow-[0_0_20px_rgba(220,38,38,0.5)]">
+                        <span class="skew-fix">Zobacz ofertę</span>
+                    </a>
+                    <a href="cennik.html" class="border-2 border-white text-white px-10 py-4 font-bold uppercase text-lg skew-button hover:bg-white hover:text-black transition-all">
+                        <span class="skew-fix">Sprawdź cennik</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="konsorcjum" class="bg-white border-b-4 border-red-600 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
+            <div class="bg-black text-white p-8 md:p-12 shadow-2xl skew-container">
+                <div class="skew-fix flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold uppercase mb-2 text-red-500">Konsorcjum Szkoleniowe</h3>
+                        <h2 class="text-3xl md:text-4xl font-black mb-4">CRD & OSKameleon</h2>
+                        <p class="text-gray-400">
+                            Połączyliśmy siły, aby zapewnić najwyższą jakość szkolenia. Dwie marki, jedna flota, wspólni instruktorzy i ten sam cel: 
+                            <span class="text-white font-bold">Twoje Prawo Jazdy.</span>
+                        </p>
+                    </div>
+                    <div class="md:w-1/3 flex justify-center text-6xl text-red-600 gap-4">
+                        <i class="fas fa-handshake"></i>
+                        <i class="fas fa-route"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dlaczego-my" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-black text-gray-900 mb-2 uppercase">Dlaczego CRD?</h2>
+                <div class="h-1 w-24 bg-red-600 mx-auto"></div>
+                <div class="h-1 w-12 bg-black mx-auto mt-1"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-white p-8 border-b-4 border-transparent hover:border-red-600 shadow-sm hover:shadow-xl transition-all duration-300 reveal">
+                    <div class="text-red-600 text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 uppercase">Profesjonalizm</h3>
+                    <p class="text-gray-600 leading-relaxed">Nasi instruktorzy cechują się wyjątkową cierpliwością i technicznym podejściem. Nauka jazdy to precyzja, a nie stres.</p>
+                </div>
+
+                <div class="group bg-gray-900 text-white p-8 border-b-4 border-red-600 shadow-xl scale-105 z-10 reveal delay-100">
+                    <div class="text-white text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-car-sport"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 uppercase text-red-500">Top Flota</h3>
+                    <p class="text-gray-400 leading-relaxed">Szkolimy na Toyotach Yaris IV (z kamerami i HUD), motocyklach Suzuki i Yamaha oraz czterokołowcach AIXAM. Sprzęt egzaminacyjny.</p>
+                </div>
+
+                <div class="group bg-white p-8 border-b-4 border-transparent hover:border-red-600 shadow-sm hover:shadow-xl transition-all duration-300 reveal delay-200">
+                    <div class="text-red-600 text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 uppercase">Szybkie Terminy</h3>
+                    <p class="text-gray-600 leading-relaxed">Jazdy 3, 4, a nawet 5 razy w tygodniu to u nas standard. Nie czekasz tygodniami na kolejną lekcję. Działamy sprawnie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20 reveal">
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-6 uppercase">Droga do celu</h2>
+                <p class="text-gray-500">Prosta mapa drogowa do Twojego sukcesu.</p>
+            </div>
+            
+            <div class="relative reveal delay-100">
+                <div class="hidden md:block absolute top-12 left-0 w-full h-2 bg-gray-200 z-0 rounded-full"></div>
+                <div class="hidden md:block absolute top-12 left-0 w-1/4 h-2 bg-red-600 z-0 rounded-full shadow-[0_0_15px_rgba(220,38,38,0.6)]"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-24 h-24 bg-white border-4 border-red-600 text-red-600 rounded-full flex items-center justify-center text-3xl shadow-xl mb-6 transform group-hover:scale-110 transition-all duration-300">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 uppercase group-hover:text-red-600 transition">1. Badania i PKK</h4>
+                        <p class="text-gray-600 text-sm px-4">Wizyta u lekarza i odebranie Profilu Kandydata na Kierowcę w wydziale komunikacji. To Twój start.</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-24 h-24 bg-white border-4 border-gray-800 text-gray-800 rounded-full flex items-center justify-center text-3xl shadow-xl mb-6 transform group-hover:scale-110 group-hover:border-red-600 group-hover:text-red-600 transition-all duration-300">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 uppercase group-hover:text-red-600 transition">2. Teoria (Pit Stop)</h4>
+                        <p class="text-gray-600 text-sm px-4">Wykłady stacjonarne w sali lub e-learning w domu. Zdobądź wiedzę niezbędną na drodze.</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-24 h-24 bg-white border-4 border-gray-800 text-gray-800 rounded-full flex items-center justify-center text-3xl shadow-xl mb-6 transform group-hover:scale-110 group-hover:border-red-600 group-hover:text-red-600 transition-all duration-300">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 uppercase group-hover:text-red-600 transition">3. Praktyka (Wyścig)</h4>
+                        <p class="text-gray-600 text-sm px-4">30 godzin intensywnej jazdy. Plac manewrowy i ruch miejski pod okiem instruktora.</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-24 h-24 bg-white border-4 border-gray-800 text-gray-800 rounded-full flex items-center justify-center text-3xl shadow-xl mb-6 transform group-hover:scale-110 group-hover:border-red-600 group-hover:text-red-600 transition-all duration-300">
+                            <i class="fas fa-flag-checkered"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 uppercase group-hover:text-red-600 transition">4. Egzamin (Meta)</h4>
+                        <p class="text-gray-600 text-sm px-4">Egzamin wewnętrzny, a potem państwowy w WORD. Odbierasz prawo jazdy i ruszasz w drogę!</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-900 text-white relative overflow-hidden" id="oferta">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-12 reveal">
+                <div class="md:w-1/2">
+                    <div class="border-l-4 border-red-600 pl-6 mb-8">
+                        <h2 class="text-4xl md:text-5xl font-black uppercase leading-tight mb-4">
+                            Wybierz swoją <br> <span class="text-red-600">kategorię</span>
+                        </h2>
+                        <p class="text-gray-400 text-lg">
+                            Kompleksowe szkolenie kierowców. Niezależnie czy wybierasz motocykl, samochód osobowy czy microcar - szkolimy skutecznie.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-gray-800 p-4 border border-gray-700 hover:border-red-600 transition-colors cursor-default">
+                            <i class="fas fa-car text-red-600 text-2xl mb-2"></i>
+                            <div class="font-bold">Kategoria B</div>
+                        </div>
+                        <div class="bg-gray-800 p-4 border border-gray-700 hover:border-red-600 transition-colors cursor-default">
+                            <i class="fas fa-motorcycle text-red-600 text-2xl mb-2"></i>
+                            <div class="font-bold">Motocykle</div>
+                        </div>
+                        <div class="bg-gray-800 p-4 border border-gray-700 hover:border-red-600 transition-colors cursor-default">
+                            <i class="fas fa-car-side text-red-600 text-2xl mb-2"></i>
+                            <div class="font-bold">Microcar</div>
+                        </div>
+                        <div class="bg-gray-800 p-4 border border-gray-700 hover:border-red-600 transition-colors cursor-default">
+                            <i class="fas fa-id-card-alt text-red-600 text-2xl mb-2"></i>
+                            <div class="font-bold">Kategoria AM</div>
+                        </div>
+                    </div>
+
+                    <a href="oferta.html" class="inline-block bg-white text-black px-8 py-3 font-bold uppercase skew-button hover:bg-red-600 hover:text-white transition-all">
+                        <span class="skew-fix">Pełna oferta</span>
+                    </a>
+                </div>
+                
+                <div class="md:w-1/2 relative">
+                    <div class="relative border-4 border-gray-800 p-2">
+                        <div class="absolute -top-4 -right-4 w-20 h-20 border-t-4 border-r-4 border-red-600 z-20"></div>
+                        <div class="absolute -bottom-4 -left-4 w-20 h-20 border-b-4 border-l-4 border-red-600 z-20"></div>
+                        <img src="yaris.png" alt="Toyota Yaris" class="w-full relative z-10 transition-all duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-red-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8 reveal">
+            <div>
+                <h2 class="text-3xl font-black uppercase italic">Inwestycja w bezpieczeństwo</h2>
+                <p class="text-red-100 mt-2">Przejrzyste zasady. Brak ukrytych kosztów. Raty 0%.</p>
+            </div>
+            <a href="cennik.html" class="bg-black text-white px-10 py-4 font-bold uppercase skew-button hover:bg-gray-800 transition shadow-lg">
+                <span class="skew-fix">Zobacz cennik <i class="fas fa-arrow-right ml-2"></i></span>
+            </a>
+        </div>
+    </section>
+
+    <section id="opinie" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-4xl font-black uppercase text-gray-900 mb-4">Opinie Absolwentów</h2>
+                <div class="flex justify-center text-red-600 text-xl gap-1 mb-4">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <div class="text-gray-500 font-bold">5.0/5.0 na Google</div>
+            </div>
+            
+            <div class="relative max-w-5xl mx-auto reveal delay-100">
+                <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-20 text-black hover:text-red-600 text-4xl focus:outline-none transition-colors">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-20 text-black hover:text-red-600 text-4xl focus:outline-none transition-colors">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="overflow-hidden px-4">
+                    <div id="reviewsTrack" class="flex transition-transform duration-500 ease-out gap-6">
+                        
+                        <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex-shrink-0 bg-gray-50 border border-gray-200 p-8 flex flex-col">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="font-bold flex items-center">
+                                    <div class="w-10 h-10 bg-black text-white flex items-center justify-center mr-3 font-bold text-sm">N</div>
+                                    <div>Nikola</div>
+                                </div>
+                                <i class="fab fa-google text-gray-400"></i>
+                            </div>
+                            <div class="flex text-red-500 mb-4 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="review-text text-gray-600 text-sm leading-relaxed flex-grow">
+                                Serdecznie polecam! Profesjonalne i indywidualne podejście do kursanta oraz świetna atmosfera.
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex-shrink-0 bg-gray-50 border border-gray-200 p-8 flex flex-col">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="font-bold flex items-center">
+                                    <div class="w-10 h-10 bg-black text-white flex items-center justify-center mr-3 font-bold text-sm">A</div>
+                                    <div>Alan</div>
+                                </div>
+                                <i class="fab fa-google text-gray-400"></i>
+                            </div>
+                            <div class="flex text-red-500 mb-4 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="review-text text-gray-600 text-sm leading-relaxed flex-grow" data-full-text="Jestem bardzo zadowolona z przygotowania do egzaminu pan Tomasz bardzo zrozumiale i spokojnie tłumaczył wszystko co było dla mnie problematyczne i to dzięki temu zdałam. Z czystym sumieniem polecam każdemu Centrum ruchu drogowego i jestem ogromnie wdzięczna za pomoc i przede wszystkim cierpliwość.">
+                                Jestem bardzo zadowolona z przygotowania do egzaminu pan Tomasz bardzo zrozumiale i spokojnie tłumaczył...
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex-shrink-0 bg-gray-50 border border-gray-200 p-8 flex flex-col">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="font-bold flex items-center">
+                                    <div class="w-10 h-10 bg-black text-white flex items-center justify-center mr-3 font-bold text-sm">W</div>
+                                    <div>Wiktoria</div>
+                                </div>
+                                <i class="fab fa-google text-gray-400"></i>
+                            </div>
+                            <div class="flex text-red-500 mb-4 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="review-text text-gray-600 text-sm leading-relaxed flex-grow">
+                                Polecam z czystym sumieniem CRD Tomasz, pełen profesjonalizm, rzetelna wiedza przekazywana przez instruktorów, miła atmosfera.
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex-shrink-0 bg-gray-50 border border-gray-200 p-8 flex flex-col">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="font-bold flex items-center">
+                                    <div class="w-10 h-10 bg-black text-white flex items-center justify-center mr-3 font-bold text-sm">U</div>
+                                    <div>Użytkownik Google</div>
+                                </div>
+                                <i class="fab fa-google text-gray-400"></i>
+                            </div>
+                            <div class="flex text-red-500 mb-4 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="review-text text-gray-600 text-sm leading-relaxed flex-grow" data-full-text="Najlepsza szkoła nauki jazdy, jaka może być. Bardzo profesjonalne i indywidualne podejście do każdego kursanta. Bardzo dużo cierpliwości i ogrom wiedzy przekazanej w łatwy do zrozumienia sposób. Bardzo polecam.">
+                                Najlepsza szkoła nauki jazdy, jaka może być. Bardzo profesjonalne i indywidualne podejście...
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex-shrink-0 bg-gray-50 border border-gray-200 p-8 flex flex-col">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="font-bold flex items-center">
+                                    <div class="w-10 h-10 bg-black text-white flex items-center justify-center mr-3 font-bold text-sm">A</div>
+                                    <div>Anna G.</div>
+                                </div>
+                                <i class="fab fa-google text-gray-400"></i>
+                            </div>
+                            <div class="flex text-red-500 mb-4 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <div class="review-text text-gray-600 text-sm leading-relaxed flex-grow">
+                                Polecam z czystym sumieniem CRD Tomasz, pełen profesjonalizm, rzetelna wiedza przekazywana przez instruktorów, miła atmosfera.
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://www.google.com/search?q=Centrum+Ruchu+Drogowego+Tomasz+Szmit+Opinie" target="_blank" class="text-red-600 font-bold border-b-2 border-red-600 hover:text-black hover:border-black transition-colors">
+                    Napisz recenzję na Google <i class="fas fa-external-link-alt ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="py-24 bg-gray-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <div class="reveal">
+                    <h2 class="text-4xl font-black uppercase mb-8">Kontakt <span class="text-red-600">CRD</span></h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-red-600 p-3"><i class="fas fa-map-marker-alt text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg uppercase">Siedziba</h4>
+                                <p class="text-gray-400">Chełmiec 44A<br>59-424 Chełmiec</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="bg-red-600 p-3"><i class="fas fa-phone-alt text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg uppercase">Telefon</h4>
+                                <a href="tel:+48536506650" class="text-2xl font-bold hover:text-red-600 transition">+48 536 506 650</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="bg-red-600 p-3"><i class="fas fa-envelope text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg uppercase">Email</h4>
+                                <a href="mailto:biuro@oskameleon.pl" class="text-gray-400 hover:text-white transition">biuro@oskameleon.pl</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 h-64 border border-gray-700 grayscale hover:grayscale-0 transition-all duration-500">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Chełmiec+44A+59-424+Chełmiec&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div id="formularz-kontaktowy" class="bg-black p-8 md:p-10 border border-gray-800 reveal delay-100">
+                    <h3 class="text-2xl font-bold uppercase mb-6 text-white">Formularz zgłoszeniowy</h3>
+                    
+                    <form id="contactForm" action="https://formsubmit.co/plore1337@gmail.com" method="POST" class="space-y-6">
+                        <input type="hidden" name="_subject" value="NOWY KLIENT: CRD Szmit">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
+
+                        <div>
+                            <input type="text" id="name" name="Imie_i_Nazwisko" required placeholder="Imię i Nazwisko" 
+                                class="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white focus:border-red-600 focus:outline-none transition-colors">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <input type="tel" id="phone" name="Telefon" required placeholder="Telefon" 
+                                class="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white focus:border-red-600 focus:outline-none transition-colors">
+                            <input type="email" id="email" name="Email" required placeholder="Email" 
+                                class="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white focus:border-red-600 focus:outline-none transition-colors">
+                        </div>
+
+                        <div>
+                            <select id="course" name="Wybrany_Kurs" class="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-gray-300 focus:border-red-600 focus:outline-none cursor-pointer">
+                                <option value="Nie wybrano" disabled selected>-- Wybierz kurs --</option>
+                                <option value="Kategoria B">Kategoria B</option>
+                                <option value="Motocykle">Motocykle (A, A1, A2)</option>
+                                <option value="Kategoria AM">Kategoria AM</option>
+                                <option value="Microcar">Microcar</option>
+                                <option value="Inne Pytanie">Inne pytanie</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <textarea id="message" name="Wiadomosc" rows="4" placeholder="Wiadomość (opcjonalnie)"
+                                class="w-full px-4 py-3 bg-gray-900 border border-gray-700 text-white focus:border-red-600 focus:outline-none resize-none"></textarea>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input id="rodo" type="checkbox" required class="mt-1 accent-red-600">
+                            <label for="rodo" class="text-xs text-gray-500">
+                                Wyrażam zgodę na przetwarzanie danych osobowych w celu kontaktu.
+                            </label>
+                        </div>
+
+                        <button type="button" id="submitBtn" class="w-full bg-red-600 text-white font-bold uppercase py-4 hover:bg-white hover:text-black transition-all">
+                            Wyślij zgłoszenie
+                        </button>
+                    </form>
+
+                    <div id="successMessage" class="hidden flex flex-col items-center justify-center text-center h-full w-full py-10">
+                        <div class="text-red-500 text-6xl mb-4"><i class="fas fa-check-circle"></i></div>
+                        <h3 class="text-2xl font-bold uppercase text-white mb-2">Wysłano!</h3>
+                        <p class="text-gray-400 mb-6">Skontaktujemy się z Tobą wkrótce.</p>
+                        <button onclick="location.reload()" class="border border-white text-white px-6 py-2 hover:bg-white hover:text-black transition-colors">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-500 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-2xl font-black italic text-white mb-4">CRD <span class="text-red-600">SZMIT</span></div>
+                    <p class="text-sm max-w-sm mb-4">Konsorcjum szkoleniowe Szmit & Szmit. Profesjonalizm i doświadczenie na rynku legnickim i jaworskim.</p>
+                    
+                    <div class="p-4 bg-gray-900 border border-gray-800 max-w-sm">
+                        <p class="text-xs font-bold text-gray-400 uppercase mb-1">Dane do wpłat:</p>
+                        <p class="text-sm text-white font-mono">Credit Agricole</p>
+                        <p class="text-sm text-red-500 font-mono font-bold tracking-wide">10 1940 1076 5172 6977 0000 0000</p>
+                        <p class="text-xs text-gray-500 mt-1">Tytuł: Imię i Nazwisko + Kategoria</p>
+                    </div>
+                    
+                    <p class="text-xs font-mono mt-4">NIP: 695 145 68 66</p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold uppercase mb-4">Linki</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="Katb.html" class="hover:text-red-600 transition">Kategoria B</a></li>
+                        <li><a href="motocylke.html" class="hover:text-red-600 transition">Motocykle</a></li>
+                        <li><a href="KatAMCZ.html" class="hover:text-red-600 transition">Microcar</a></li>
+                        <li><a href="cennik.html" class="hover:text-red-600 transition">Cennik</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold uppercase mb-4">Kontakt</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-red-600 mt-1 mr-3"></i>
+                            <span class="text-gray-400">Chełmiec 44A<br>59-424 Chełmiec</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-red-600 mr-3"></i>
+                            <a href="tel:+48536506650" class="text-white hover:text-red-600 transition font-bold">+48 536 506 650</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-red-600 mr-3"></i>
+                            <a href="mailto:biuro@oskameleon.pl" class="text-gray-400 hover:text-white transition">biuro@oskameleon.pl</a>
+                        </li>
+                    </ul>
+
+                    <div class="mt-6 flex gap-4">
+                        <a href="https://www.facebook.com/OSKameleon" target="_blank" class="text-2xl text-gray-500 hover:text-red-600 transition"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/centrumruchudrogowego/" target="_blank" class="text-2xl text-gray-500 hover:text-red-600 transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs gap-4">
+                <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+                    <p>© 2026 CRD Tomasz Szmit. Wszelkie prawa zastrzeżone.</p>
+                    <span class="hidden md:inline text-gray-700">|</span>
+                    <a href="polityka.html" class="hover:text-white transition">Polityka Prywatności</a>
+                </div>
+                <div class="mt-2 md:mt-0">
+                    <a href="https://sosinskiweb.pl/" target="_blank" class="hover:text-white transition group">
+                        Projekt i realizacja: <span class="text-white group-hover:text-red-600 transition font-bold">SosinskiWeb</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+48536506650" class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-red-600 text-white shadow-lg hover:bg-black transition-colors">
+        <i class="fas fa-phone-alt text-2xl"></i>
+    </a>
+
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-black border-t border-gray-800 p-4 z-50 hidden">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-gray-400 text-xs">Strona używa cookies.</p>
+            <button id="accept-cookies" class="bg-red-600 text-white text-xs px-4 py-2 font-bold uppercase hover:bg-red-700">OK</button>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
